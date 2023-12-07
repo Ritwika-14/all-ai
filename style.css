@@ -84,10 +84,12 @@
           width: fit-content;
           background-color: rgba(0, 0, 0, 0.1);
           color: rgb(red, green, blue);
-          border: 10px solid white;
-          border-radius: 0.50rem;
+          border: 10px solid rgb(224, 136, 136);
+          border-radius: 0.30rem;
           padding: 0.75rem;
           cursor: pointer;
+          box-shadow: 10px;
+          box-shadow: 1px;
         }
       }
   
@@ -106,7 +108,7 @@
       user-select: none;
   
       .btn {
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(135, 15, 15, 0.5);
         color: rgba(0, 0, 0, 0.7);
         border: 2px solid rgba(0, 0, 0, 0.6);
         margin: 0 0.25rem;
@@ -195,6 +197,70 @@
           font-size: 0.7rem;
         }
       }
+    }
+  }
+  
+  button {
+    position: relative;
+    outline: none;
+    border-radius: 50px;
+    border: 5px solid #CE6A93;
+    display: flex;
+    cursor: pointer;
+    width: fit-content;
+    opacity: 1;
+    background-color: #FFBAD6;
+  
+    &:hover {
+      animation: rotate 0.7s ease-in-out both;
+    }
+  
+    span {
+      color: #151515;
+      font-size: 1rem;
+      font-weight: 900;
+      letter-spacing: 0.7px;
+      margin: auto;
+    }
+  
+    &:hover span {
+      animation: storm 0.7s ease-in-out both;
+      animation-delay: 0.06s;
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+  @keyframes storm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
     }
   }
   
