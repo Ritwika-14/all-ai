@@ -15,7 +15,7 @@ Make sure you have a modern web browser installed.
 
 ### Clone the Repository
 
-```bash
+
 git clone https://github.com/your-username/all-ai.git
 Open the Application
 Navigate to the project directory: cd all-ai
