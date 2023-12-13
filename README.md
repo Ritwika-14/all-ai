@@ -20,7 +20,7 @@ git clone https://github.com/your-username/all-ai.git
 Open the Application
 Navigate to the project directory: cd all-ai
 Open index.html in your preferred web browser.
-Usage
+
 Feel free to explore the various AI cards presented on the web app. Each card may contain information, demos, or links related to a specific AI concept.
 
 Contributing
